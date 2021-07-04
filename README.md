@@ -61,6 +61,21 @@ Which means that in order to get the summary on them, you'll have to only run:
 $ curl localhost:3000
 ```
 
+## Specs and testing
+
+In order to run the whole test suit you'll have to execute the following:
+```shell
+$ rspec
+```
+Add a `-fd` flag to see a meaningful output:
+```shell
+$ rspec -fd
+```
+Run the linter for the whole project with the following command:
+```shell
+$ rubocop
+```
+
 ## Troubleshooting
 
 In case you are having issues with running the executable file, make sure the file has the execution permission configured:
@@ -76,4 +91,4 @@ $ chmod +x run/socials.rb
 * If services (scraped social networks) start holding the requests randomly (with `sleep` or other) and the fetch time for the application is crucial, implement the following:
   * In threads, do N identical requests for each source
   * Process the first one that succeeds, cancel the others
-* Handle connection-timeouts, misc errors
+* Handle connection-timeouts
