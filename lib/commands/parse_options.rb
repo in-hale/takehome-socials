@@ -6,7 +6,7 @@ module Commands
   class ParseOptions
 
     URL_REGEX = URI::DEFAULT_PARSER.make_regexp
-    SOURCE_ARG_REGEX = /(?<name>[^\s]+) (?<key>[^\s]+) (?<url>#{URL_REGEX})/.freeze
+    SOURCE_ARG_REGEX = /^(?<name>[^\s]+) (?<key>[^\s]+) (?<url>#{URL_REGEX})$/.freeze
 
     def initialize(default_options = {}, raw_arguments = ARGV)
       @default_options = default_options
