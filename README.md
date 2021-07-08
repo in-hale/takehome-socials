@@ -4,7 +4,7 @@ Prior to installation, make sure you have the following installed on your machin
 * `Ruby 2.7.3`
 * `gem bundler`
 
-In order to install Adventure follow these steps:
+In order to install the app follow these steps:
 
 ```shell
 $ git clone https://github.com/in-hale/takehome-socials.git
